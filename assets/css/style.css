@@ -1,23 +1,51 @@
-@keyframes roatate{
-     100%{
-        transform :rotateY(40deg)
-     }
-    
-}
 @keyframes rgb{
-    0%{background-color: #FF0000};
-    20%{background-color: #FF8000};
-    40%{background-color: #FFFF00};
-    60%{background-color: #00FF00};
-    70%{background-color: #00FF80};
-    80%{background-color: #3333FF};
-    100%{background-color: #FF3399};
+    0%{color: #FF0000;}
+    20%{color: #FF8000;}
+    40%{color: #FFFF00;}
+    60%{color: #00FF00;}
+    70%{color: #00FF80;}
+    80%{color: #3333FF;}
+    100%{color: #FF3399;}
 }
-@keyframes under{
-    100%{
-        text-decoration: underline rgb(138, 138, 138) 2px solid;
+@keyframes rgbborder{
+    0%{border-right: 1px ridge  #FF0000;}
+    20%{border-right:1px ridge #FF8000;}
+    40%{border-right:1px ridge #FFFF00;}
+    60%{border-right:1px ridge #00FF00;}
+    70%{border-right: 1px ridge#00FF80;}
+    80%{border-right: 1px ridge#3333FF;}
+    100%{border-right: 1px ridge#FF3399;}
+}
+@keyframes rgbborderleft{
+    0%{border-left: 1px ridge  #FF0000;}
+    20%{border-left:1px ridge #FF8000;}
+    40%{border-left:1px ridge #FFFF00;}
+    60%{border-left:1px ridge #00FF00;}
+    70%{border-left: 1px ridge#00FF80;}
+    80%{border-left: 1px ridge#3333FF;}
+    100%{border-left: 1px ridge#FF3399;}
+}
+@keyframes mymove {
+    0%{margin-right: 0px;   transform: rotateZ(0deg);  text-shadow: 2px 2px #ff0000;
 
     }
+    33%{margin-right: 450px;  transform: rotateZ(360deg);  text-shadow: 2px 2px #00ffbf;
+
+    }
+    66%{margin-left: 2000px;  transform: rotateZ(120deg);  text-shadow: 2px 2px #00ff4c; 
+
+    }
+    100%{margin-right:0px;  transform: rotateZ(360deg);  text-shadow: 2px 2px #4e4e4e;
+
+    }
+  }
+@font-face{
+    font-family: gandom;
+    src: url(./../font/Gandom-FD.ttf);
+}
+@font-face {
+    font-family: Ziba;
+    src: url(./../font/AlwaysLovely.otf);
 }
 @font-face {
     font-family: lalezar;
@@ -288,6 +316,7 @@ a{
     width: 100%;
     height:auto;
     margin-top: 21px;
+
 }
 .w-post{
      width: 25%;
@@ -295,7 +324,7 @@ a{
      padding: 25px;
      float: right;
      background: rgb(212, 212, 212);
-     
+
 
 }
 .w-card{
@@ -308,8 +337,7 @@ a{
     transition: width 2s , height 2s;
     animation-duration : 5s;
     animation-iteration-count: 1;
-    
-
+    overflow: hidden;
 }
 .w-card img{
     width: 50%;
@@ -336,11 +364,148 @@ a{
 }
 .w-card:hover{
     width: 150%;
-    /* height: 400px; */
-    opacity: 100%;
-    border: rgba(0, 255, 191, 0.548) solid 1px;
+     /* height: 400px;  */
+     opacity: 100%;
+    border: rgba(0, 255, 191, 0.548) solid 1px; 
+}
+/* .salam{
+       height:200px;
+       width: 300px;
+       background-color:red;
+       text-align:center;
+    overflow: hidden;
+
+}
+.tests{
+    height: 200px;
+    width:300px;
+    transition: width 0.5s, height 0.5s ;
+} 
+.tests:hover{
+    height: 50%;
+    width:100px;
+    border-radius: 50%;
+
+} */
+.footer{
+    margin-top: 45px;
+    width:100%;
+    height: 500px;
+    background: rgb(255,0,112);
+background: radial-gradient(circle, rgba(255,0,112,1) 0%, rgba(41,124,255,1) 0%, rgba(96,95,95,1) 0%, rgba(0,0,0,1) 97%);
+}
+.imag-footer{
+    border-right: rgb(253, 0, 0) 1px;
+    border-style: ridge  ;
+} 
+.logoyefoot{
+    margin-top: 4px;
+    width: 250px;
+    border-radius: 100%;
+    float: left;
+    height: auto;
+    margin-left: 15px;
+    border-radius: 100%;
+}
+.inmad{
+    top: 264px;
+    right: 258px;
+    /* margin-top: 355px; */
+    /* margin-left: 15px; */
+    position: relative;
+    border-radius: 100%;
+    width: 108px;
+    float: left;
+    height: auto;
+
+  }
+  .ssl{
+    border-radius: 100%;
+     width: 90px;
+     float: left;
+     height: auto;
+     position: relative;
+     right: 177px;
+     top: 137px;
+  }
+.Questions{
+    width: 40%;
+    height: 410px;
+    border: rgb(77, 77, 77) 1px;
+    border-style: ridge  ;
+}
+.FaQ{
+
+}
+.Header-faq{
+    color:white;
+    text-align:center;
+    font-size: 50px;
+    animation-name: mymove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
+.Question{
+    color:white;
+    margin-top: 15px;
+    font-family: gandom;
+    overflow: hidden;   
+    width: 190px;
+    height:30px;
+    margin-right: 8px;
+    transition: height 0.5s , width 0.25s;
+}
+.Question:hover{
+      border-bottom:  1px groove  rgb(0, 102, 255);
+      width: 240px;
+      height: 56px;
+}
+.Socials{
+    height: 18px;
+    position: relative;
+    width:900px;
+    margin-right: 446px;
+    border-top: rgb(77, 77, 77) ridge 1px;
+    top: -1px; 
+}
+
+.Social-img{
+    margin-top:29px;
+    margin-right: 148px;
+    padiding: 0px 4px;
+}
+
+.fi-brands-instagram{
+   color: rgba(241, 241, 241, 0.692);
+   padding: 0 2px;
+   font-size: 25px;
+}
+.fi-rr-globe{
+    color: rgba(241, 241, 241, 0.692);
+    padding: 0 2px;
+    font-size: 25px;
+}
+.fi-brands-facebook{
+    color: rgba(241, 241, 241, 0.692);
+    padding: 0 2px;
+    font-size: 25px;
+}
+.fi-brands-twitter{
+    color: rgba(241, 241, 241, 0.692);
+    padding: 0 2px;
+    font-size: 25px;
+}
+.fi-brands-whatsapp{
+    color: rgba(241, 241, 241, 0.692);
+    padding: 0 2px;
+    font-size: 25px;
+}
+.fi-brands-whatsapp:hover , .fi-brands-twitter:hover , .fi-brands-facebook:hover , .fi-rr-globe:hover , .fi-brands-instagram:hover{
+      color: rgba(0, 0, 0, 0.774);
+      text-shadow: 2px 2px 3px #0065fcce;
+      font-size: 30px
+    }
 
 
 
