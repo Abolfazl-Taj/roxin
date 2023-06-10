@@ -1,0 +1,131 @@
+@keyframes pan {
+  100% {
+    background-position: 50% 40%;
+  }
+}
+@keyframes Box-shadow {
+  0% {
+    box-shadow: 2px 2px 20px rgb(0, 110, 255);
+  }
+  30% {
+    box-shadow: 2px 2px 20px #57caff;
+  }
+  60% {
+    box-shadow: 2px 2px 20px #5cc6f7;
+  }
+  80% {
+    box-shadow: 2px 2px 20px #003cff;
+  }
+  100% {
+    box-shadow: 2px 2px 20px #0374f5;
+  }
+}
+
+@font-face {
+  font-family: Lalezar-Regular;
+  src: url(../font/Lalezar-Regular.ttf);
+}
+@font-face {
+  font-family: Vazir;
+  src: url(../font/Vazir-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0 24px;
+  background-image: url(../image/Background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: pan 20s infinite alternate linear;
+}
+
+.Head-Login {
+  position: absolute;
+  left: 480px;
+  width: 410px;
+  text-align: center;
+  top: 80px;
+  animation: Box-shadow 7s infinite alternate;
+  color: rgb(83, 83, 83);
+  background-color: rgba(255, 255, 255, 0.911);
+  border-radius: 35px;
+  font-family: Lalezar-Regular;
+}
+.Input {
+  position: absolute;
+  top: 180px;
+  animation: Box-shadow 7s infinite alternate;
+  background-color: rgba(255, 255, 255, 0.911);
+  width: 450px;
+  height: 350px;
+  border-radius: 38px;
+}
+form {
+  text-align: center;
+  padding: 3px 1px;
+}
+form input {
+  position: relative;
+  top: 70px;
+  border: none;
+  border-bottom: 1px solid rgb(59, 155, 250);
+  background: transparent;
+}
+p {
+  font-family: Lalezar-Regular;
+  color: rgb(83, 83, 83);
+  font-size: 21px;
+  position: relative;
+  top: 24px;
+  transition: all 1.5s;
+}
+form input:hover {
+  border: none;
+  border-bottom: 1px solid rgb(0, 128, 255);
+}
+p:hover {
+  transform: translate(-150px, -20px);
+}
+.fi-sr-home {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  color: #0374f5;
+  font-size: 50px;
+  border-bottom: 0.5px solid rgb(59, 155, 250);
+  transform: all 1s;
+}
+.fi-sr-home:hover {
+  color: white;
+}
+.fi-sr-comment-user {
+  position: absolute;
+  top: 70px;
+  left: 102px;
+  /* border: 1px groove rgb(59, 155, 250); */
+  border-radius: 50%;
+  padding: 0 4px;
+  font-size: 22px;
+  color: rgb(59, 155, 250);
+}
+.fi-br-fingerprint {
+  position: absolute;
+  top: 164px;
+  left: 102px;
+  border-radius: 50%;
+  padding: 0 4px;
+  font-size: 22px;
+  color: rgb(59, 155, 250);
+}
+.Login-btn {
+box-shadow: 3px 3px 10px rgb(117, 117, 117);
+  background-color: rgb(59, 155, 250);
+  width: 160px;
+  height: 30px;
+ border-radius: 50%;
+
+}
