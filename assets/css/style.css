@@ -24,6 +24,11 @@
     color: #f56fb2;
   }
 }
+@keyframes pan {
+  100% {
+    background-position: -1px , 15% ;
+  }
+}
 @keyframes rgbborder {
   0% {
     border-right: 1px ridge #ff0000;
@@ -92,6 +97,8 @@
     text-shadow: 2px 2px #4e4e4e;
   }
 }
+
+
 @font-face {
   font-family: gandom;
   src: url(./../font/Gandom-FD.ttf);
@@ -188,31 +195,62 @@ a {
   margin-right: 30px;
 
 }
-.header-nav li {
-   
+.header-nav > li {
   display: inline-block;
   padding: 23px 10px;
   float: right;
   font-family: lalezar;
   transition: 0.5s;
+  position: relative;
+  transform: all 0.5s;
+  height: 51px;
   transition-timing-function: linear;
 }
+.drop{
+  position: absolute;
+  background:rgba(96, 95, 95, 1);
+   width: auto;
+  height: auto;
+  top: 100%;
+  display: none;
+} 
+.drop li{
+  color: white;
+ padding: 8px 3px;
+ font-size: 18px;
+ font-family: b-nazanin;
+border-bottom: ridge 1px royalblue ;
+border-left: ridge 1px royalblue ;
+
+}
+.drop li:hover{
+  background-color: rgb(160, 160, 160);
+}
+.drop-down .drop{
+  display: none;
+}
+.drop-down:hover .drop{
+  display: block;
+}
+
 .header-nav li a{
   color: white;
    
 }
-
-.header-nav li div:hover {
+.header-nav  li > div{
+  transition: all 0.5s;
+}
+.header-nav  li  div:hover {
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0);
   border-bottom: 1px solid cornflowerblue;
-  transform: translate(3px, 3px);
-  color: red;
+  transform: translate(2px, 2px);
+  width:109px;
 }
 
 .login-btn {
   border: none;
   background: gray;
-  color: #bbb;
+  color: rgb(0, 0, 0);
   padding: 3px 27px;
   margin: 21px 0px;
   font-family: nazanin;
@@ -220,22 +258,17 @@ a {
   cursor: pointer;
   outline: none;
   float: left;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #ffffff;
 }
 .intro {
-  background: rgb(238, 174, 202);
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(138, 68, 76, 1) 50%,
-    rgba(148, 187, 233, 1) 100%
-  );
-  background: rgba(63, 63, 63, 0.562);
-
+ background-image: url(../image/Intro-back.svg);
+ background-repeat: no-repeat;
+ background-size: cover;
   width: 100%;
   height: 400px;
   padding: 50px 0px;
   display: block;
+  animation: pan 20s infinite alternate linear;
 }
 
 .intro-right {
@@ -245,10 +278,10 @@ a {
 }
 .intro-right h1 {
   direction: rtl;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 55px;
   font-family: adab;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #ffffff;
 }
 .intro-right-btns {
   width: auto;
@@ -257,7 +290,7 @@ a {
   margin-top: 50px;
 }
 .intro-right-btn {
-  border: solid white 2px;
+  border: solid rgb(0, 0, 0) 2px;
   background: transparent;
   padding: 9px 12px;
   border-radius: 15%;
@@ -265,10 +298,10 @@ a {
   cursor: pointer;
   outline: none;
   float: right;
-  color: snow;
+  color: rgb(0, 0, 0);
   font-family: nazanin;
   margin-left: 8px;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #ffffff;
 }
 .intro-left {
   width: 50%;
@@ -430,6 +463,8 @@ a {
   opacity: 100%;
   border: rgba(0, 255, 191, 0.548) solid 1px;
 }
+
+
 /* .salam{
        height:200px;
        width: 300px;
@@ -462,10 +497,7 @@ a {
     rgba(0, 0, 0, 1) 97%
   );
 }
-.imag-footer {
-  border-right: rgb(253, 0, 0) 1px;
-  border-style: ridge;
-}
+
 .logoyefoot {
   margin-top: 4px;
   width: 250px;
@@ -476,13 +508,13 @@ a {
   border-radius: 100%;
 }
 .inmad {
-  top: 264px;
-  right: 258px;
+  top: 113px;
+  left: 14px;
   /* margin-top: 355px; */
   /* margin-left: 15px; */
   position: relative;
-  border-radius: 100%;
-  width: 108px;
+  border-radius: 10%;
+  width: 150px;
   float: left;
   height: auto;
 }
@@ -523,7 +555,7 @@ a {
 .Question:hover {
   border-bottom: 1px groove rgb(0, 102, 255);
   width: 240px;
-  height: 56px;
+  height: 56px; 
 }
 .Socials {
   height: 18px;
@@ -534,8 +566,14 @@ a {
   top: -1px;
 }
 
+.imag-footer{
+  width: 400px;
+  height: 79%;
+  border-right: ridge rgb(77, 77, 77) 1px; ;
+  float: left;
+} 
 .Social-img {
-  margin-top: 29px;
+  margin-top: 25px;
   margin-right: 148px;
   padding: 0px 4px;  
 }
@@ -611,64 +649,7 @@ a {
   text-shadow: 2px 2px 3px #0065fcce;
   font-size: 30px;
 }
-.Categoryes {
-  margin-left: 400px;
-  width: 400px;
-  margin-top: -428px;
-  float: left;
-  height: 410px;
-  border-left: rgb(77, 77, 77) 1px groove;
-}
-.footer-cat{
-  font-size: 30px;
-  margin-top: 10px;
-  text-align: right;
-  color: white;
-  font-family: gandom;
-  text-shadow: 2px 2px 2px black;
-}
-.list-footer{
-  height: 30%;
-  border-bottom: rgb(77, 77, 77) 1px groove;
-}
-.list-footer ul{
-  margin-top: 7px;
-  padding: 4px 0px; 
-}
-.list-footer ul li{
-  color: white;
-  font-family: vazir;
-  text-shadow: 1px 1px 5px black;
-}
-.consol:hover {
-  border-bottom: 1px ridge     rgb(0, 102, 255);
-  width: 70px;
-}
-.pc:hover , .pc-parts:hover{
-  border-bottom: 1px ridge     rgb(0, 102, 255);
-  width: 110px;
 
-}
-.games:hover{
-  border-bottom: 1px ridge     rgb(0, 102, 255);
-  width: 55px;
-}
-.about-us{
-  height:70%;
-}
-.about-us-header{
-  font-size: 30px;
-  text-align: right;
-  color: white;
-  font-family: gandom;  
-  text-shadow: 2px 2px 2px black;
-}
-.about-description{
-  margin-top: 3px;
-  font-family: dastnevis;
-  color: rgb(173, 173, 173);
-  font-size: 29px;
-}
 
 .mahfoz{
   color: white;
@@ -676,8 +657,11 @@ a {
   text-decoration: underline 1px rgb(0, 102, 255);
   margin-right: 580px;
   margin-top: 60px;
-
-
+}
+.fi-rr-angle-small-down{
+  color: #fff;
+  padding: 0 2px;
+  vertical-align: -3px;
 }
 
 
@@ -746,25 +730,6 @@ a {
   text-align: center;
   font-size: 25px;
   animation-name: none;
-}
-.about-description {
-  margin-top: auto;
-  font-family: dastnevis;
-  color: rgb(173, 173, 173);
-  font-size: 19px;
-}
-.about-us-header {
-  font-size: 21px;
-  text-align: right;
-  color: white;
-  font-family: gandom;
-  text-shadow: 2px 2px 2px black;
-}
-.about-description {
-  margin-top: auto;
-  font-family: dastnevis;
-  color: rgb(173, 173, 173);
-  font-size: 19px;
 }
 .mahfoz {
   color: white;

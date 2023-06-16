@@ -1,0 +1,186 @@
+@keyframes Trans {
+    100%{
+        background-position-x: 50%;
+    }
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(../image/About-us-background.svg);
+    animation: Trans infinite 15s both;
+}
+.clearfix{
+    clear: both;
+  }
+.Icon{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 50px ;
+    width: auto;
+    height: auto;
+}
+.Team-img{
+ width:  430px;
+ height: auto;
+}
+.Description{
+    position: relative;
+    top: 100px;
+    margin-right: 20px;
+}
+h1{
+    font-family: gandom;
+    font-size: 28px;
+    color: aliceblue;
+    text-shadow: 1px 1px 3px rgb(48, 48, 48);
+    border-bottom: inset 1px rgb(2, 255, 171) ;
+    width: 150px;
+}
+.paragheraph{
+    src: url(../font/BRoya.ttf);
+    position: relative;
+    top: 13px;
+    font-size: 20px;
+    color:beige;
+    text-shadow: 1px 1px 4px black;
+}
+.Ertebat{
+    background: transparent;
+    width: 1000px;
+    height: 382px;
+    position: relative;
+    top: 115px;
+    right: 100px;
+    padding: 0px 2px;
+}
+h2{
+    position: absolute;
+    font-family: gandom;
+    font-size: 28px;
+    color: aliceblue;
+    text-shadow: 2px 2px 3px rgb(48, 48, 48);
+}
+.ertebat-post{
+    position: absolute;
+    top: 80px;
+    right: 3px;
+    width: 200px ;
+    height: 200px;
+    background: rgb(4,0,255);
+    background: radial-gradient(circle, rgba(4,0,255,1) 0%, rgba(0,125,255,1) 61%);
+    border-radius: 5px;
+    padding: 1px 1px;
+    overflow: hidden;
+}
+.ertebat-post p{
+    position: relative;
+    top: 5px;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px black;
+    text-align: right;
+    padding: 0 4px;
+    right: 5px;
+    color:beige;
+    src: url(../font/BRoya.ttf);
+}
+.ertebat-post:hover .image{
+    border-radius: 150%;
+    width: 110px;
+    height: auto;
+    position: relative;
+    right: 40px;
+    transition: all 0.75s linear;
+
+}
+.ertebat-post img{
+   width: 100%;
+   height: auto;
+   border-radius: 3px;
+   transition: all 0.75s linear;
+
+}
+.ertebat-post-1{
+    position: absolute;
+    right: 280px;
+    top: 80px;
+    width: 200px ;
+    height: 200px;
+    background: rgb(4,0,255);
+    background: radial-gradient(circle, rgba(4,0,255,1) 0%, rgba(0,125,255,1) 61%);
+    border-radius: 5px;
+    padding: 1px 1px;
+    overflow: hidden;
+}
+.ertebat-post-1 p{
+    position: relative;
+    top: 5px;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px black;
+    text-align: right;
+    padding: 0 4px;
+    right: 5px;
+
+    color:beige;
+    src: url(../font/BRoya.ttf);
+}
+.ertebat-post-1:hover .image{
+    border-radius: 100%;
+    width: 110px;
+    height: auto;
+    position: relative;
+    right: 45px;
+}
+.ertebat-post-1 img{
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    transition: all 0.75s linear;
+
+}
+.ertebat-post-3{
+    position: absolute;
+    right: 550px;
+    top: 80px;
+    width: 200px ;
+    height: 200px;
+    background: rgb(4,0,255);
+    background: radial-gradient(circle, rgba(4,0,255,1) 0%, rgba(0,125,255,1) 61%);
+    border-radius: 5px;
+    padding: 1px 1px;
+    overflow: hidden;
+}
+.ertebat-post-3:hover .image{
+    border-radius: 100%;
+    width: 110px;
+    height: auto;
+    position: relative;
+    right: 45px;
+    transition: all 0.75s linear;
+}
+.ertebat-post-3 p{
+    position: relative;
+    top: 5px;
+    right:  5px;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px black;
+    text-align: right;
+    padding: 0 4px;
+    color:beige;
+    src: url(../font/BRoya.ttf);
+    direction: ltr;
+}س
+.ertebat-post-3:hover .image{
+    border-radius: 100%;
+    width: 110px;
+    height: auto;
+    position: relative;
+    right: 43px;
+}
+.ertebat-post-3 img{
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    transition: all 0.75s linear;
+
+}

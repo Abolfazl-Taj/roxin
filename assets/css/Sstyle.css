@@ -1,6 +1,6 @@
 @keyframes pan {
   100% {
-    background-position: 50% 40%;
+    background-position: -1px ;
   }
 }
 @keyframes Box-shadow {
@@ -19,6 +19,25 @@
   100% {
     box-shadow: 2px 2px 20px #0374f5;
   }
+}
+@keyframes blinking {
+  0%{
+       color: rgb(0, 110, 255);
+  }
+  30%{
+      color: #57caff;
+  }
+  40%{
+       color: #5cc6f7;
+  }
+  60%{
+    color: #003cff;
+  }
+  100%{
+     color: #0374f5; opacity: 0%;
+  }
+
+  
 }
 
 @font-face {
@@ -55,6 +74,7 @@ body {
   border-radius: 35px;
   font-family: Lalezar-Regular;
 }
+
 .Input {
   position: absolute;
   top: 180px;
@@ -89,7 +109,7 @@ form input:hover {
 }
 p:hover {
   transform: translate(-150px, -20px);
-}
+} 
 .fi-sr-home {
   position: absolute;
   top: 20px;
@@ -110,6 +130,7 @@ p:hover {
   border-radius: 50%;
   padding: 0 4px;
   font-size: 22px;
+  animation: normal 2s blinking  infinite;
   color: rgb(59, 155, 250);
 }
 .fi-br-fingerprint {
@@ -119,13 +140,24 @@ p:hover {
   border-radius: 50%;
   padding: 0 4px;
   font-size: 22px;
+  animation: normal 2s blinking infinite;
   color: rgb(59, 155, 250);
 }
 .Login-btn {
-box-shadow: 3px 3px 10px rgb(117, 117, 117);
+  box-shadow: 3px 3px 10px rgb(117, 117, 117);
   background-color: rgb(59, 155, 250);
   width: 160px;
   height: 30px;
- border-radius: 50%;
+  border: none;
+  border-radius: 40%;
+}
 
+
+ .Head-Login::after{
+  content: "In";
+  color:cornflowerblue
+} 
+.Head-Login::before{
+ content: "Please ";
+ color:cornflowerblue;
 }
