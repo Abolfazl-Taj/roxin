@@ -403,7 +403,6 @@ border-left: ridge 1px royalblue ;
   width: calc(100% / 3);
   height: 350px;
   padding: 0px 3px;
-  background-color: rgba(129, 125, 125, 0.514);
 }
 .game-section h2 {
   font-family: b-nazanin;
